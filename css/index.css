@@ -1,0 +1,286 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.nav1>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px;
+    /* border: 2px solid red; */
+    background-color: rgb(207, 200, 200);
+    list-style-type: none;
+    margin: auto;
+}
+
+.nav1>ul>li:hover {
+    cursor: pointer;
+    background-color: rgb(33, 32, 32);
+    color: white;
+
+}
+
+.nav2 {
+    width: 95%;
+    margin: auto;
+    height: 110px;
+    /* border: 2px solid rgb(10, 81, 181); */
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.nav2>img {
+    /* width: 100px; */
+    height: 100%;
+    padding: 0px;
+}
+
+#social {
+    padding: 8px;
+}
+
+#social>a {
+    text-decoration: none;
+}
+
+#social>a>button {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(167, 184, 184);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#social>a>button>img {
+    height: 16px;
+    margin-top: 3px;
+}
+
+.nav3>uL {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 15px; */
+    font-size: 12px;
+    /* border: 2px solid red; */
+    width: 95%;
+    margin: auto;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.nav3>ul>li>span {
+
+    color: blue;
+    font-weight: 600;
+
+}
+
+.nav3>ul>li:hover {
+    cursor: pointer;
+    color: red;
+    text-decoration-line: underline;
+    font-weight: 600;
+}
+
+.nav4>ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+    /* border: 2px solid red; */
+    background-color: rgb(227, 14, 14);
+    color: whitesmoke;
+    height: 25px;
+    margin: auto;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.nav4>ul>li:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* body section start */
+
+/* Top  stories section */
+#top-stories {
+    margin: 3px;
+    margin-left: 20px;
+}
+
+.topstorty {
+    /* border: 2px solid red; */
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.topstorty>div {
+    width: 100%;
+    /* border: 2px solid green; */
+    margin: 1px;
+
+}
+
+.topstorty>div>img {
+    width: 100%;
+    height: 200px;
+    /* margin-bottom: 5px;  */
+}
+
+.topstorty>div>div {
+    padding: 8px;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    height: 50px;
+    font-size: 14px;
+}
+
+/* container part */
+.container {
+    /* border: 2px solid rgb(128, 36, 0); */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+#left-cont {
+    width: 16%;
+    height: 500px;
+    /* border: 2px solid rgb(21, 128, 0); */
+}
+
+/* mid-cont */
+#mid-cont {
+    width: 59%;
+    border: 2px solid rgb(128, 0, 21);
+    padding: 7px;
+   
+}
+
+#mid-cont>h3 {
+    margin: 4px;
+
+}
+#in-dept {
+    /* border: 2px solid rgb(19, 0, 128); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 8px;
+    padding: 5px;
+    background-color: white;
+}
+
+#in-dept>div>img {
+    width: 90%;
+    border: 5px solid rgb(163, 161, 161);
+}
+#in-dept>div>p {
+   color: rgb(104, 100, 100);
+   font-size: 15px;
+}
+
+/* product finder section */
+
+.productFinder{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 3px;
+    /* border: 2px solid red; */
+    background-color: whitesmoke;
+}
+.productFinder>div{
+    width: 90%;  
+    text-align: center;
+}
+.productFinder>div>img{
+    width: 70%;
+    height: 50px;
+    
+}
+.productFinder>div>img:hover{
+    width: 70%;
+    height: 50px;
+    color: red;
+    
+}
+.productFinder>div>a{
+    text-decoration: none;
+    padding: 5px;  
+    color: black;
+    font-weight: 500;
+    
+}
+.productFinder>div>a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* popular phine sectoion  */
+#outer{
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+    background-color: rgb(230, 224, 224);
+    border-radius: 15px;
+}
+.inner{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    /* border: 2px solid red; */
+    text-align: center;
+    background-color: white;
+    border-radius: 11px;
+}
+
+.inner>div>img{
+    width:95%;
+    height: 100px;
+    padding-top: 10px;
+    /* border: 2px solid rgb(0, 0, 255); */
+}
+.inner>div>p{
+    font-weight: 700px; 
+    font-size: 15px;
+}
+.inner>div>a{
+    font-weight: 700px; 
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.inner>div>a:hover{
+    
+    color:red;
+}
+.inner span{
+    font-weight: 700px; 
+    font-size: 15px;
+    color: red;
+}
+
+
+/* ridht section div */
+#right-cont {
+    width: 23%;
+
+    height: 500px;
+}
