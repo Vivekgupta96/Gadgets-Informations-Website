@@ -1,7 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
-    
+    font-family: 'Poppins', sans-serif;
+
+
 }
 
 .nav1>ul {
@@ -13,6 +15,7 @@ body {
     background-color: rgb(207, 200, 200);
     list-style-type: none;
     margin: auto;
+    font-size: 16px;
 }
 
 .nav1>ul>li:hover {
@@ -30,7 +33,7 @@ body {
     padding: 0px;
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 .nav2>img {
@@ -75,12 +78,19 @@ body {
     margin: auto;
     font-weight: 500;
     list-style-type: none;
+    font-size: 16px;
 }
 
 .nav3>ul>li>span {
 
     color: blue;
     font-weight: 600;
+
+}
+
+.nav3>ul>li>a {
+    text-decoration: none;
+    color: #3f3c3c;
 
 }
 
@@ -91,13 +101,18 @@ body {
     font-weight: 600;
 }
 
+#serch-btn>img {
+    width: 15px;
+    height: 15px;
+}
+
 .nav4>ul {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    font-size: 12px;
+    font-size: 15px;
     /* border: 2px solid red; */
     background-color: rgb(227, 14, 14);
     color: whitesmoke;
@@ -133,6 +148,7 @@ body {
     width: 100%;
     /* border: 2px solid green; */
     margin: 1px;
+    background-color: #3f3c3c;
 
 }
 
@@ -144,7 +160,7 @@ body {
 
 .topstorty>div>div {
     padding: 8px;
-    background-color: rgb(20, 19, 19);
+    /* background-color: rgb(20, 19, 19); */
     color: white;
     height: 50px;
     font-size: 14px;
@@ -154,29 +170,68 @@ body {
 .container {
     /* border: 2px solid rgb(128, 36, 0); */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 20px;
     background-color: whitesmoke;
+
 }
 
 #left-cont {
-    width: 16%;
-    height: 500px;
-    /* border: 2px solid rgb(21, 128, 0); */
+    width: 14%;
+    /* background-color: antiquewhite; */
+
 }
+
+#left-cont1>div {
+    padding: 5px;
+    background-color: white;
+}
+
+#left-cont1>div>img {
+    width: 93%;
+}
+
+#left-cont1>div>p {
+    color: rgb(40, 39, 39);
+
+}
+
+#left-cont1>div>p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.recent {
+    padding: 10px;
+    background-color: rgb(235, 229, 229);
+    font-size: 15px;
+}
+
+.recent>p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#moreNews {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* mid-cont */
 #mid-cont {
-    width: 59%;
-    border: 2px solid rgb(128, 0, 21);
+    width: 58%;
+    /* border: 2px solid rgb(128, 0, 21); */
     padding: 7px;
-   
+
 }
 
 #mid-cont>h3 {
     margin: 4px;
 
 }
+
 #in-dept {
     /* border: 2px solid rgb(19, 0, 128); */
     display: grid;
@@ -190,60 +245,66 @@ body {
     width: 90%;
     border: 5px solid rgb(163, 161, 161);
 }
+
 #in-dept>div>p {
-   color: rgb(104, 100, 100);
-   font-size: 15px;
+    color: rgb(104, 100, 100);
 }
 
 /* product finder section */
 
-.productFinder{
+.productFinder {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 3px;
     /* border: 2px solid red; */
     background-color: whitesmoke;
 }
-.productFinder>div{
-    width: 90%;  
+
+.productFinder>div {
+    width: 90%;
     text-align: center;
 }
-.productFinder>div>img{
+
+.productFinder>div>img {
     width: 70%;
     height: 50px;
-    
+
 }
-.productFinder>div>img:hover{
+
+.productFinder>div>img:hover {
     width: 70%;
     height: 50px;
     color: red;
-    
+
 }
-.productFinder>div>a{
+
+.productFinder>div>a {
     text-decoration: none;
-    padding: 5px;  
+    padding: 5px;
     color: black;
     font-weight: 500;
-    
+
 }
-.productFinder>div>a:hover{
+
+.productFinder>div>a:hover {
     color: red;
     cursor: pointer;
 }
 
 
 /* popular phine sectoion  */
-#outer{
+#outer {
     margin-top: 15px;
     background-color: white;
     padding: 15px;
     background-color: rgb(230, 224, 224);
     border-radius: 15px;
 }
-.inner{
+
+.inner {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     /* border: 2px solid red; */
     text-align: center;
@@ -251,36 +312,412 @@ body {
     border-radius: 11px;
 }
 
-.inner>div>img{
-    width:95%;
+.inner>div>img {
+    width: 80%;
     height: 100px;
     padding-top: 10px;
     /* border: 2px solid rgb(0, 0, 255); */
 }
-.inner>div>p{
-    font-weight: 700px; 
-    font-size: 15px;
+
+.inner>div>p {
+    font-weight: 700px;
+    font-size: 18px;
 }
-.inner>div>a{
-    font-weight: 700px; 
+
+.inner>div>a {
+    font-weight: 700px;
     font-size: 15px;
     text-decoration: none;
     color: black;
 }
-.inner>div>a:hover{
-    
-    color:red;
+
+.inner>div>a:hover {
+
+    color: red;
 }
-.inner span{
-    font-weight: 700px; 
+
+.inner span {
+    font-weight: 700px;
     font-size: 15px;
     color: red;
+}
+
+#ent {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    /* border: 2px solid red; */
+    text-align: center;
+    background-color: white;
+    border-radius: 11px;
+    padding: 10px;
+}
+
+#ent>div {
+
+    /* border: 2px solid red; */
+    text-align: start;
+    background-color: rgb(252, 236, 236);
+    padding: 5px;
+
+}
+
+#ent>div>img {
+    width: 100%;
+    /* border: 2px solid red;
+     */
+}
+
+/*  ENTERTAINMENT NEWS & REVIEWS*/
+
+#entNews {
+    /* border: 2px solid rgb(19, 0, 128); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 8px;
+    padding: 5px;
+    background-color: white;
+}
+
+#entNews>a>div>img {
+    width: 90%;
+    border: 5px solid rgb(184, 182, 182);
+}
+
+#entNews>a>div>p {
+    color: rgb(31, 30, 30);
+    font-size: 15px;
+}
+
+#entNews>a {
+    text-decoration: none;
+}
+
+#hrline {
+
+    height: 2px;
+    background-color: rgb(67, 63, 63);
+}
+
+/* popular brand section */
+.popularBrandouter {
+    background-color: white;
+    margin-top: 40px;
+
+}
+
+#popularBrand {
+    /* border: 2px solid rgb(19, 0, 128); */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid: 3px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+#popularBrand>a>div>img {
+    width: 80%;
+    height: 60px;
+    border: 1px dashed grey;
+
+}
+
+#popularBrand>a>div>p {
+    color: rgb(31, 30, 30);
+    font-size: 20px;
+}
+
+#popularBrand>a {
+    text-decoration: none;
+}
+
+/* guide section */
+
+.guideSectionOuter {
+    background-color: #3f3c3c;
+    color: white;
+}
+
+#guideh2 {
+    padding: 2px;
+}
+
+#guideSection {
+    /* border: 2px solid rgb(19, 0, 128); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 8px;
+    padding: 5px;
+
+}
+
+#guideSection>a>div>img {
+    width: 90%;
+
+}
+
+#guideSection>a>div>p {
+    color: white;
+    font-size: 15px;
+}
+
+#guideSection>a {
+    text-decoration: none;
 }
 
 
 /* ridht section div */
 #right-cont {
-    width: 23%;
+    width: 22%;
 
-    height: 500px;
+}
+
+.featurebox {
+    /* border: 2px soliD rgb(207, 14, 14); */
+    background-color: white;
+    margin-top: 40px;
+}
+
+.featurebox>img {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+}
+
+.featurebox>p {
+    padding: 5px;
+
+}
+
+/* newlater form serch */
+#newslatter {
+    padding-top: 20px;
+}
+
+#newslatter>[type="text"] {
+    border: 2px solid teal;
+    width: 60%;
+}
+
+#newslatter>[type="text"]::placeholder {
+    font-size: 13px;
+    padding: 8px;
+}
+
+#newslatter>[type="submit"] {
+    background-color: rgb(248, 63, 63);
+    color: white;
+}
+
+/* follow section  */
+#follow {
+    margin-top: 10px;
+    background-color: white;
+    padding: 3px;
+    text-align: center;
+
+}
+
+#follow>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+
+}
+
+#follow>div>a>img {
+    width: 70%;
+}
+
+/* tredingGadgetandTopic section */
+#TRENDING-GADGETS-AND-TOPICS {
+    background-color: red;
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tredingGadgetandTopic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.tredingGadgetandTopic a {
+    text-decoration: none;
+    color: rgb(98, 94, 94);
+    font-size: 13px;
+    padding: 5px;
+}
+
+.tredingGadgetandTopic a:hover {
+    color: rgb(129, 25, 25);
+    font-weight: 700;
+}
+
+/* opinion section */
+.opinion-outer a {
+    text-decoration: none;
+    color: #191919;
+
+}
+
+.opion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.opion>img {
+    width: 28%;
+
+}
+
+.opion>p {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+/* ecomerser website name */
+.ecomerce {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid red; */
+    background-color: white;
+    text-align: center;
+}
+
+.ecomerce>div>img {
+    width: 65%;
+
+}
+
+.ecomerce>div>p {
+    font-size: 13px;
+
+}
+
+.ecomerce>div {
+    border: 1px solid rgb(189, 183, 183);
+    align-items: center;
+
+}
+
+
+/* news page mid section */
+#news-cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    /* border: 2px solid red; */
+    background-color: white;
+    margin: auto;
+
+
+}
+
+#news-cont>div {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(171, 166, 166);
+}
+
+#news-cont>div>div {
+    width: 65%;
+}
+
+#news-cont img {
+
+    width: 25%;
+    height: 150px;
+}
+
+#news-cont h4 {
+    font-size: 18px;
+    color: rgb(103, 98, 98);
+}
+
+#news-cont h5 {
+    font-size: 15px;
+    color: rgb(58, 55, 55);
+}
+
+#news-cont p {
+    font-size: 18px;
+    color: red;
+}
+
+
+/* footer section */
+
+.footer {
+    /* margin-top: 50px; */
+    /* margin-bottom: 30px; */
+    /* border: 2px solid red; */
+    background-color: #454545;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+
+.footer a {
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    
+
+}
+
+.div1 {
+    margin: auto;
+}
+
+.div1>img {
+    width: 100%;
+}
+
+
+
+.div4>div:nth-child(2)>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    border: 2px solidd rgb(241, 233, 233);
+
+}
+
+.div4>div:nth-child(2)>div>img {
+    width: 70%;
+
+}
+
+.div5>div>div>img {
+    width: 40%;
+
+}
+
+.div5>div>img {
+    width: 40%;
+
+}
+
+/* copy rigth text */
+#copy{
+    text-align: center;
 }
