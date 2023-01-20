@@ -1,0 +1,70 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.signInPage {
+    /* border: 2px solid red; */
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.signInPage>div:nth-child(1) {
+    margin: auto;
+}
+.signInPage>div:nth-child(1)>h1 {
+   margin-left: 20px;
+    font-size: 40px;
+}
+
+/* right side */
+.signInPage>div:nth-child(2) {
+  
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+.signInPage>div:nth-child(2)>a>h1 {
+    margin-left: 40px;
+    display: inline;
+    
+}
+.signInPage>div:nth-child(2)>a {
+    text-decoration: none; 
+    color: teal;
+    font-size: 20px;
+    
+}
+#signform  {
+    margin-left: 40px;
+   
+}
+#signform label {
+    font-size: 20px;
+    padding-top: 15px;
+}
+#signform input {
+    width: 68%;
+    border-radius: 5px;
+    border: 2px solid rgb(177, 171, 171);
+    padding: 18px;
+    padding-top: 15px; 
+}
+#submit{
+    margin-top: 35px;
+    background: #E48700;
+    color: white;
+    width: 70%;
+    margin-bottom: 50px;
+    font-size: 20px;
+}

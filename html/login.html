@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/log.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <title>loginin</title>
+</head>
+
+<body>
+    <div class="signInPage">
+        <div>
+            <h1>Welcome To world of Gadgets</h1>
+            <img src="../sorces/signpageImg.png" alt="">
+
+        </div>
+        <div>
+            <!-- <a href="./sign.html">
+                <h1>SignUp </h1>
+            </a> -->
+            <a href="./login.html">
+                <h1>LogIn </h1>
+            </a>
+            <form id="signform" class="loginform" action="">
+
+                <label for=""> Email ID</label><br>
+                <input type="email" name="" id="email" placeholder="Enter Email here"><br>
+                <label for="">Password</label><br>
+                <input type="password" name="" id="password" placeholder="Enter Password here"><br>
+
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+
+
+    </div>
+
+    <script>
+        let LSdata = JSON.parse(localStorage.getItem("user-data")) || []
+
+        let logdata = document.querySelector(".loginform")
+
+        logdata.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            let logemail = document.getElementById("email")
+            let logpass = document.getElementById("password")
+
+            LSdata.forEach((ele) => {
+                if (logemail.value === ele.email && logpass.value === ele.password) {
+                    alert("login succesful")
+                    window.location.href = "../html/main.html"
+
+                }
+                else if (logemail.value === ele.email && logpass.value !== ele.password) {
+                    alert("wrong creadential")
+                }
+            });
+
+        })
+    </script>
+</body>
+
+</html>
