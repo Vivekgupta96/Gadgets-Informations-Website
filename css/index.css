@@ -101,10 +101,11 @@ body {
     font-weight: 600;
 }
 
-#serch-btn>img {
-    width: 15px;
-    height: 15px;
+/* serced icon */
+.icon {
+color: #191919;
 }
+
 
 .nav4>ul {
 
@@ -680,7 +681,7 @@ body {
     text-decoration: none;
     list-style: none;
     color: whitesmoke;
-    
+
 
 }
 
@@ -718,6 +719,6 @@ body {
 }
 
 /* copy rigth text */
-#copy{
+#copy {
     text-align: center;
 }
