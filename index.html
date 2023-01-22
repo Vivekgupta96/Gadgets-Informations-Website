@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/log.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-   <title>signInPage</title>
+    <title>signInPage</title>
 </head>
 
 <body>
@@ -21,9 +21,6 @@
             <a href="/index.html">
                 <h1>SignUp </h1>
             </a>
-            <a href="./html/login.html">
-                <h1>LogIn </h1>
-            </a>
             <form id="signform" action="">
                 <label for="">Enter Your name</label><br>
                 <input type="text" id="name" placeholder="Enter name here"><br>
@@ -33,9 +30,10 @@
 
                 <label for="">Password</label><br>
                 <input type="password" name="" id="password" placeholder="Enter Password here"><br>
-
+                <p>Alredy SignUp?<a href="./html/login.html">Click here</a></p>
                 <input type="submit" id="submit" value="Submit">
             </form>
+
         </div>
     </div>
 
@@ -49,36 +47,41 @@
 
         formdata.addEventListener("submit", (e) => {
             e.preventDefault();
-            formobj = {
-                name: inputname.value,
-                email: inputemail.value,
-                password: inputpass.value
+
+            if (check(formarr) == true) {
+                alert("Email Alredy Register")
+                window.location.href = "./html/login.html";
             }
-            if (check(formobj.email) == true) {
-                alert("alredy regidter")
-            } else {
+            else {
+                formobj = {
+                    name: inputname.value,
+                    email: inputemail.value.toUpperCase(),
+                    password: inputpass.value
+                }
+
                 formarr.push(formobj)
 
                 localStorage.setItem("user-data", JSON.stringify(formarr))
-                alert("sighUp succesfully")
+                alert("SighUp Succesfully")
                 window.location.href = "./html/login.html";
                 // this is for the move the next page after login
             }
 
+
         })
 
-        function check(data){
-            for(let i=0;i<formarr.length;i++){
-                if(formarr.email===data){
+        function check(formarr) {
+            var inputemail = document.getElementById("email")
+            for (let i = 0; i < formarr.length; i++) {
+                if (formarr[i].email === inputemail.value.toUpperCase()) {
                     return true
-                    console.log("checked")
                 }
             }
             return false
         }
 
     </script>
-   
+
 </body>
 
 </html>

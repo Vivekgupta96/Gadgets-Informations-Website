@@ -17,7 +17,7 @@ ent()
 
 let entEl = document.getElementById("ent")
 
-let leftCont=document.getElementById("left-cont1")
+let leftCont = document.getElementById("left-cont1")
 
 
 
@@ -54,7 +54,7 @@ async function trending() {
 trending()
 
 
-function  displayTrending(data) {
+function displayTrending(data) {
 
     data.forEach((ele) => {
 
@@ -73,7 +73,19 @@ function  displayTrending(data) {
 }
 
 
+// for serch bar section
 
+
+
+
+let search = document.getElementById("search")
+let serchdiv = document.getElementById("serchdiv")
+
+search.addEventListener("click", () => {
+
+    serchdiv.toggle("#serchdivdisplay")
+
+})
 
 
 

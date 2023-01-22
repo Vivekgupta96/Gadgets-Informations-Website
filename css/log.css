@@ -68,3 +68,15 @@ body {
     margin-bottom: 50px;
     font-size: 20px;
 }
+
+@media screen and (max-width:750px) {
+    .signInPage {
+        /* border: 2px solid red; */
+        width: 80%;
+        height: 100vh;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+}
