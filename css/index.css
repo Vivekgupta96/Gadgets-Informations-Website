@@ -100,10 +100,43 @@ body {
     text-decoration-line: underline;
     font-weight: 600;
 }
+.productSumMenu{
+    display: none;
+    padding: 15px 15px 15px 0px;
+    border-radius: 5px;
+    text-align: center;
+   
+
+}
+.nav3>ul>li >.productSumMenu ul li  a{
+    text-decoration: none;
+    list-style: none;
+    color: #3f3c3c;
+}
+.nav3>ul>li >.productSumMenu ul li  a:hover{
+    
+    color:red;
+    font-weight: 700px;
+}
+.nav3>ul>li .productSumMenu ul {
+    text-decoration: none;
+    list-style: none;
+}
+.nav3>ul>li:hover .productSumMenu {
+    display: block;
+    position: absolute;
+    /* background: transparent; */
+    background-color: white;
+    text-align: left;
+}
+
+
+
+
 
 /* serced icon */
-.icon {
-color: #191919;
+.icon{
+   margin-left: -40px;
 }
 
 
@@ -681,8 +714,10 @@ color: #191919;
     text-decoration: none;
     list-style: none;
     color: whitesmoke;
-
-
+}
+.footer ul {
+   
+    list-style: none;
 }
 
 .div1 {

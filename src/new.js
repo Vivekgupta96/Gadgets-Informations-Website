@@ -100,16 +100,14 @@ Tesla Shareholder Trial: US Jury Told That Elon Musk's 'Lies' Cost Tesla Investo
     {
         img: "../sorces/newsHtml/amazon_reuters_full_1561527266452-last.webp",
         desc: `	
-        Amazon to Cut Jobs in US, Canada, Costa Rica as Part of Mass Layoffs`,
+Amazon to Cut Jobs in US, Canada, Costa Rica as Part of Mass Layoffs`,
         p1: `by Reuters, 19 January 2023`,
         source: `INTERNATE`
 
     },
     {
         img: "../sorces/newsHtml/Wikipedia_large_1674123853883-2.webp",
-        desc: `	
-        	
-Wikipedia Introduces First Desktop Redesign in a Decade, Brings New Table of Contents for Better Navigation`,
+        desc: `Wikipedia Introduces First Desktop Redesign in a Decade, Brings New Table of Contents for Better Navigation`,
         p1: `by Reuters, 19 January 2023`,
         source: `INTERNATE`
 
@@ -124,9 +122,7 @@ Wikipedia Introduces First Desktop Redesign in a Decade, Brings New Table of Con
     },
     {
         img: "../sorces/newsHtml/samsung_galaxy_s22_ultra_india_1672305189126-5.webp",
-        desc: `	
-        	
-Samsung Galaxy S23 Series to Be Powered by Custom Overclocked Snapdragon 8 Gen 2 Soc: Report`,
+        desc: `Samsung Galaxy S23 Series to Be Powered by Custom Overclocked Snapdragon 8 Gen 2 Soc: Report`,
         p1: `by Reuters, 19 January 2023`,
         source: `MOBILE`
 
