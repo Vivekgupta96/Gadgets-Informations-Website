@@ -1,0 +1,49 @@
+#pod-cont1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+    border-bottom: 1.5px dotted grey;
+    
+}
+
+#pod-cont1>div{
+    
+    align-items: center;
+    width: 70%;
+}
+#pod-cont1>div>hr{
+    
+    border-bottom: 2px solid grey;
+}
+
+#pod-cont1>img{
+    border-left: 2px dotted grey;
+}
+
+#pod-cont2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* border: 2px solid red; */
+   padding: 10px;
+}
+#pod-cont2>div>img{
+    width: 95%;
+    /* border: 2px solid red; */
+}
+#pod-cont2>div>p{
+    width: 90%;
+    padding: 5px;
+}
+
+.btmouter,.topouter{
+    background-color: white;
+    /* padding: 5px; */
+}
+p:hover{
+    cursor: pointer;
+    color: red;
+}
