@@ -30,6 +30,7 @@
                 <input type="email" name="" id="email" placeholder="Enter Email here"><br>
                 <label for="">Password</label><br>
                 <input type="password" name="" id="password" placeholder="Enter Password here"><br>
+                <p>Not SignUp?<a href="/index.html">Click here</a></p>
 
                 <input type="submit" id="submit" value="Submit">
             </form>
@@ -44,23 +45,31 @@
         let logdata = document.querySelector(".loginform")
 
         logdata.addEventListener("submit", (e) => {
+
             e.preventDefault()
 
+            if (check(LSdata) == true) {
+                alert("login succesful")
+                window.location.href = "../html/main.html"
+            }
+            else {
+                alert("wrong creadential")
+            }
+
+        });
+        function check(LSdata) {
             let logemail = document.getElementById("email")
             let logpass = document.getElementById("password")
 
-            LSdata.forEach((ele) => {
-                if (logemail.value === ele.email && logpass.value === ele.password) {
-                    alert("login succesful")
-                    window.location.href = "../html/main.html"
+            for (let i = 0; i < LSdata.length; i++) {
+                if (logemail.value.toUpperCase() === LSdata[i].email && logpass.value === LSdata[i].password) {
 
+                    return true
                 }
-                else if (logemail.value === ele.email && logpass.value !== ele.password) {
-                    alert("wrong creadential")
-                }
-            });
+            }
+            return false;
 
-        })
+        }
     </script>
 </body>
 
